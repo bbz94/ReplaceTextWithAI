@@ -40,7 +40,8 @@ Log file: %TEMP%\ReplaceTextWithAI.log
 3. Source: `src/ReplaceTextWithAI.ahk`
 4. Destination: choose your output path, for example `dist/ReplaceTextWithAI.exe`.
 5. Base file: use the AutoHotkey v2 base executable.
-6. Click Convert.
+6. Icon: choose an `.ico` from the `icons/` folder.
+7. Click Convert.
 
 Tip: If you add a custom icon, select it in Ahk2Exe during conversion.
 

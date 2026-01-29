@@ -21,7 +21,7 @@ AutoHotkey v2 script that rewrites selected text using Azure OpenAI and replaces
 ## Configuration
 Defaults are set in src/ReplaceTextWithAI.ahk:
 - Endpoint: https://{your-resource-name}.openai.azure.com/openai/v1
-- Deployment: gpt-5-nano
+- Deployment: gpt-4o-mini
 
 Override with environment variables if needed.
 

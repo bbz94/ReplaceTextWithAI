@@ -3,7 +3,10 @@
 AutoHotkey v2 script that rewrites selected text using Azure OpenAI and replaces the selection in-place. Supports Latvian and English output based on the input language.
 
 ## Features
-- Hotkey: Alt + F
+- Hotkey: Alt + R - Improve selected text (grammar/spelling/structure, minimal tone changes)
+- Hotkey: Alt + F - Rewrite selected text in a friendlier, more collaborative tone
+- Hotkey: Alt + P - Improve selected prompt text for clarity and effectiveness
+- Hotkey: Alt + U - Convert selected text into a structured User Story template
 - Uses Azure OpenAI chat completions
 - Language-aware output (Latvian/English)
 - Preserves clipboard after replacement
@@ -16,7 +19,11 @@ AutoHotkey v2 script that rewrites selected text using Azure OpenAI and replaces
    - (optional) AZURE_OPENAI_ENDPOINT
    - (optional) AZURE_OPENAI_DEPLOYMENT
 3. Run src/ReplaceTextWithAI.ahk.
-4. Select text and press Alt + F.
+4. Select text and use one of these hotkeys:
+    - Alt + R: standard text improvement
+    - Alt + F: friendlier rewrite
+    - Alt + P: prompt improvement
+    - Alt + U: user story conversion
 
 ## Configuration
 Defaults are set in src/ReplaceTextWithAI.ahk:
@@ -29,8 +36,8 @@ Override with environment variables if needed.
 Log file: %TEMP%\ReplaceTextWithAI.log
 
 ## Folder Structure
-- src/ — main AutoHotkey script
-- icons/ — assets
+- src/ - main AutoHotkey script
+- icons/ - assets
 
 ## Compile to EXE (AutoHotkey v2)
 

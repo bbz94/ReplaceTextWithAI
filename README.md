@@ -12,19 +12,6 @@ AutoHotkey v2 script that rewrites selected text using Azure OpenAI and replaces
 - Preserves clipboard after replacement
 - Simple retry/backoff for transient errors
 
-## Quick Start
-1. Install AutoHotkey v2.
-2. Set environment variables:
-   - AZURE_OPENAI_API_KEY
-   - (optional) AZURE_OPENAI_ENDPOINT
-   - (optional) AZURE_OPENAI_DEPLOYMENT
-3. Run src/ReplaceTextWithAI.ahk.
-4. Select text and use one of these hotkeys:
-    - Alt + R: standard text improvement
-    - Alt + F: friendlier rewrite
-    - Alt + P: prompt improvement
-    - Alt + U: user story conversion
-
 ## Configuration
 Defaults are set in src/ReplaceTextWithAI.ahk:
 - Endpoint: https://{your-resource-name}.openai.azure.com/openai/v1
@@ -39,8 +26,21 @@ Log file: %TEMP%\ReplaceTextWithAI.log
 - src/ - main AutoHotkey script
 - icons/ - assets
 
-## Compile to EXE (AutoHotkey v2)
+## Installation
+### Quick Start
+1. Install AutoHotkey v2.
+2. Set environment variables:
+   - AZURE_OPENAI_API_KEY
+   - (optional) AZURE_OPENAI_ENDPOINT
+   - (optional) AZURE_OPENAI_DEPLOYMENT
+3. Run src/ReplaceTextWithAI.ahk.
+4. Select text and use one of these hotkeys:
+    - Alt + R: standard text improvement
+    - Alt + F: friendlier rewrite
+    - Alt + P: prompt improvement
+    - Alt + U: user story conversion
 
+### Compile to EXE (AutoHotkey v2)
 1. Install AutoHotkey v2 (includes Ahk2Exe).
     1. `choco install autohotkey.install`
 2. Open Ahk2Exe from the AutoHotkey installation folder.
